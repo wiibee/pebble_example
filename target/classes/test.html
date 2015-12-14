@@ -1,0 +1,21 @@
+
+
+<html>
+<head>
+    <title>Test 2</title>
+</head>
+<body>
+    <div id="content">
+        <h1> PRUEBA </h1>
+    	<p> El dato del primer objecto {{ obj.name }}.</p>
+    	<p> El segundo objeto valor 1: {{ obj.other.other1 }}.</p>
+    	<p> El segundo objeto valor 2: {{ obj.other.other2 }}.</p>
+    	<p> Valor de funcion con string: {{ obj.funcionString }}.</p>
+    	<p> Valor de funcion con string y parametro: {{ obj.funcionStringParametro("10") }}.</p>
+    	{% set objeto = obj.funcionObject("parametro") %}
+    	<p> Valor de funcion que devuelve un objeto 1 (param): {{ objeto.rValue1 }}.</p>
+    	<p> Valor de funcion que devuelve un objeto 2: {{ objeto.rValue2 }}.</p>
+    	<p> Valor de funcion que devuelve un objeto 3: {{ objeto.rValue3 }}.</p>
+    </div>
+</body>
+</html>
